@@ -80,26 +80,31 @@ In this new configuration wizard, select "Add a new forest" and type in "mydomai
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/51a1d755-8312-4c5b-824f-c6cb23456ba6" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Log back into DC-1, if your regular account does not work, try "mydomain.com\testaccount" as the username. "testaccount" being whatever username you used for during VM creation. Once in DC-1, look inside the automatically opened "Server Manager" and scroll over to "Tools" in the top right and then click "Active Directory Users and Computers". Alternatively, you can also open this application by searching for it in your windows search bar.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/2f90a918-8cc6-424e-a21c-087f338e809c" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/eca30ded-e9a8-4c49-88ec-68e968b8ce52" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/b1aebf61-635a-4fc6-9604-cec1d1617243" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Inside "Active Directory Users and Computers" scroll over to "mydomain.com" and right click > click New> click "Organizational Unit". Name this "_EMPLOYEES" and click ok. Now repeat this process and name the next Organizational Unit "_ADMINS".
+</p>
+<br />
+
+<p>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/e877cc97-5c0a-4f2e-a727-39c66bc9dd1c" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/e5d0260b-7c09-4b24-aaf6-05f257a2c357" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/2114511d-17d2-4645-a57a-467eb4d74d70" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/68f85072-9822-4f6d-9368-0d46bb1e5aa5" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Now going into our new "_ADMINS" folder, right click anywhere inside the empty panel or right click "_ADMINS" and click New>User. Here we'll fill out this user with basic test information. See picture above for the info I used. Name : Jane Doe / User logon name: jane_admin . Click next and use "Password1" for Password boxes. Also make sure that only "Password never expires" is checked for test purposes. Click Next and then Finish.
 </p>
 <br />
 
