@@ -120,42 +120,50 @@ With our new user created, right click Jane Doe and click "Properties". In this 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/e0c62943-f6f2-452e-8646-341d12449415" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/0197754d-3e11-4320-9922-389bc0d2d1a4" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/330ac6a9-ef6a-42b7-beba-7a7c0f0121fd" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/6afa62a4-de11-494c-bbfb-e0f5099408a2" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Head to your Azure portal and pull up your DC-1 Virtual Machines page. Copy DC-1's private IP. Then head to over to Client-1's VM page and select the "Networking" tab. Here click the blue text next to "Networking Interface". In this new page navigate to the "DNS servers" tab, select "Custom" under "DNS servers" and type in or paste in DC-1's private IP. Click "Save" up top and let it process. Once it finishes saving, had back to your Client-1 VM's Overview page and Restart your VM.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/57f1e354-3901-45f4-9d09-e800675fc682" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/9e555a83-9d08-422c-bc66-55568601fd66" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After giving your VM a minute or 2 to restart, login to Client-1 with your regular account created in VM creation. Once Windows boots up, right click the Windows button in the bottom left and click "System". Here click "Rename this PC", in the new window click "Change..". In the next window select "Domain" and type in our domain "mydomain.com". Click ok and in the window that pops up login with our "jane_admin" account(Password1). Click ok. Click ok/exit out of all the windows. Let it process and then look around for a small popup window that says "Welcome to the mydomain.com domain.". Sometimes this window pops up behind everything else. Click ok to that and any other windows that pop up. Let the VM restart.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/c9c2bde7-c5fd-4297-ab22-57505d221bdc" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/98cbfb0e-61a4-4a5d-92d5-3f5b91769180" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/6913f52d-f5d0-480f-925f-48cef0e8aae3" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Login to Client-1 as mydomain.com\jane_admin Password1. Once logged in, right click the Windows button and click "System". Here click on "Remote desktop". On this next page click "Select users that can remotely access this PC". In the new window click "Add.." and then type in "Domain Users". Click "Check Names" then Ok. Ok on the previous window as well. We can now log into Client-1 as a normal, non-admin user.
+</p>
+<br />
+
+<p>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/9f8650c7-4c76-4ac7-8a16-171e369167df" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/b48d31a0-360d-4449-9d5a-1bd813febec2" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/c0ffc1b8-44af-43d0-94ff-7ecbf72eaf89" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Head back to DC-1, if not already logged in, log back in with "mydomain.com\jane_admin". Here we're going to pull up "Active Directory Users and Computers" again and create a new User inside our "_EMPLOYEES" folder. Make up a test employee in the same fashion as Jane Doe with a non expiring password. With our new employee created, we now have the ability to configure this account. We can do things like Reset his password or Unlock his account right from this application.
+</p>
+<br />
+
+<p>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/6af469f9-c7fd-41e4-89f8-04e68f25c80f" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+We can also now login to Client-1 with our new mydomain.com\bob.builder account. 
 </p>
 <br />
 
