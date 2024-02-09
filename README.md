@@ -109,10 +109,13 @@ Now going into our new "_ADMINS" folder, right click anywhere inside the empty p
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/644b44dd-7db4-4ba9-b4cb-2f38e0b427df" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/8f579477-87a7-45c3-b9e9-a860c1750651" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/013dba73-e9b2-4474-a74c-cb03f896f782" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/67cfd6a5-2ddf-4e22-919e-6a9bdc9e0c29" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+With our new user created, right click Jane Doe and click "Properties". In this Properties window, navigate to the "Member of" tab, click "Add..", type in "Domain Admins", click "Check Names", and click OK. Click OK in the Properties window to exit out, and logout of DC-1. Log back in with your new jane_admin account. If jane_admin does not work, try "mydomain.com\jane_admin" as the user.
 </p>
 <br />
 
