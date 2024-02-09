@@ -70,10 +70,12 @@ Once our VMs have been created, login to DC-1. Once windows boots, navigate to t
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/20a0531b-4b83-441a-ab65-8d257e28aa64" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/7626bb9a-8208-4463-88b4-3d3c4b86a023" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/bck9marketing/active-directory/assets/159003800/21080fe8-74ef-4bc1-a6be-4be3dab7982e" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In this new configuration wizard, select "Add a new forest" and type in "mydomain.com", click Next and type in "Password1" for the Password text boxes. From here keep clicking next until you get to "Install". Each section you click Next between will take a few seconds to load so be patient. Once you get to and hit "Install" it well take a few minutes so again, be patient. Once it finishes installing, your VM will restart.
 </p>
 <br />
 
